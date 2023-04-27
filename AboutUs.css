@@ -36,17 +36,19 @@ li {
     color: #FFFFFF;
     width: 100%;
     position: sticky;
-    top: 0;  
-    background:rgba(34, 64, 22, 1);
+    top: 0;
+    background: rgba(34, 64, 22, 1);
 }
 
 .nav-list a {
     color: #FFFFFF;
 }
-.nav-list a:hover{
+
+.nav-list a:hover {
     background-color: #E2D6CF;
 }
-.nav-item:hover{
+
+.nav-item:hover {
     background-color: #E2D6CF;
 }
 
@@ -94,13 +96,14 @@ li {
     transform-origin: 0 50%;
     transition: transform 0.3s ease-out;
 }
-.menu li:hover:after{
+
+.menu li:hover:after {
     background-color: #E2D6CF;
 }
 
 .menu li:hover {
     display: inline-block;
-   background-color: rgba(34, 64, 22);
+    background-color: rgba(34, 64, 22);
 }
 
 .menu li+li {
@@ -109,7 +112,7 @@ li {
 
 .menu li:hover:before {
     transform: scaleX(1);
-     
+
 }
 
 .menu {
@@ -119,7 +122,7 @@ li {
 #checkbox_toggle:checked~.menu {
     display: flex;
     border: 1px solid black;
-    background:rgba(34, 64, 22, 1);
+    background: rgba(34, 64, 22, 1);
 }
 
 input[type=checkbox] {
@@ -131,8 +134,11 @@ input[type=checkbox] {
     font-size: 60px;
     user-select: none;
 }
-#rightsPic{
+
+#rightsPic {
     margin-top: 100px;
+    height: 300px;
+    width: 500px;
 }
 
 .top-header {
@@ -194,16 +200,16 @@ input[type=checkbox] {
     color: rgb(226, 214, 207, 1);
 }
 
-#Movement-cards{
+#Movement-cards {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
 .cards {
     margin: 20px 40px;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     height: 400px;
     width: 400px;
 }
@@ -212,7 +218,7 @@ h4 {
     background-color: white;
     font-family: 'Roboto Slab';
     font-size: 25px;
-    padding:25px;
+    padding: 25px;
     width: 100%;
 }
 
@@ -222,45 +228,51 @@ h4 {
     font-size: 18px;
     padding: 40px 20px;
     height: 280px;
-    margin-top:-25px;
+    margin-top: -25px;
     line-height: 1.3;
 }
-.ourBodies{
+
+.ourBodies {
     background-color: pink;
-    margin:40px;
+    margin: 40px;
     font-size: 25px;
     padding: 25px;
 }
-.aboutUs-cards{
+
+.aboutUs-cards {
     display: flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    background-color:#192B28;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #192B28;
     margin: 80px 40px;
     height: 500px;
 }
 
-.picture{
+.picture {
     width: 350px;
     margin-bottom: 30px;
     margin-top: -85px;
 }
-.personText{
-    color:white;
-    background-color:#192B28;
+
+.personText {
+    color: white;
+    background-color: #192B28;
 }
+
 footer {
     background: #192B28;
 }
+
 #nav-footer {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
     margin-right: 20px;
     padding: 20px;
-    background:#192B28;
+    background: #192B28;
 }
+
 #copyright {
     font-family: "Roboto", Condensed;
     font-weight: 400;
@@ -273,15 +285,168 @@ footer {
     position: relative;
     bottom: 15px;
     margin-left: -40px;
-    background:#192B28;
-}
-.links-li{
-    background:#192B28;
-}
-.links{
-    background:#192B28;
+    background: #192B28;
 }
 
-@media (min-width: 600px){
+.links-li {
+    background: #192B28;
+}
+
+.links {
+    background: #192B28;
+}
+
+@media (min-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     
+    main{
+        display: flex;
+        flex-direction:column;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 0;
+        margin-left: 80px;
+    }
+
+    .nav-list {
+        margin-bottom: 50px;
+    }
+
+    .menu li {
+        padding: 5px 14px;
+        background: none;
+        display: inline-block;
+        transform: perspective(1px) translateZ(0);
+        position: relative;
+        transition: color 0.3s;
+    }
+
+    .menu li:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background: #E2D6CF;
+        transform: scaleX(0);
+        transform-origin: 0 50%;
+        transition: transform 0.3s ease-out;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        color: #192B28;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    .menu li:hover:before {
+        transform: scaleX(1);
+    }
+
+    #checkbox_toggle:checked~.menu {
+        display: none;
+    }
+
+    input[type=checkbox] {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .top-portion {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    
+    #rightsPic {
+        width: 720px;
+        height: 480px;
+        margin: 0;
+    }
+
+    .top-boxes {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .titleAndP {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-header {
+        display: flex;
+        align-items: flex-end;
+        margin: 0;
+    }
+
+    .top-title {
+        width: 700px;
+        height:40px;
+        margin-right: 80px;
+        font-size: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub-top {
+        font-size: 40px;
+        width: 740px;
+        display: flex;
+    }
+
+    .top-p {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .all-p {
+        display: flex;
+        padding: 40px;
+    }
+    
+    .bottom-portion {
+        display: flex;
+    }
+    .Movement-cards{
+        display: flex;
+        flex-direction:row;
+    }
+    .aboutUsPortion{
+        display: flex;
+        flex-direction:row;
+    }
+
 }
