@@ -302,11 +302,12 @@ footer {
         padding: 0;
         box-sizing: border-box;
     }
-    
-    main{
+
+    main {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
     }
+
     header {
         display: flex;
         justify-content: center;
@@ -387,7 +388,7 @@ footer {
         flex-direction: column;
         margin-top: 100px;
     }
-    
+
     #rightsPic {
         width: 720px;
         height: 480px;
@@ -409,13 +410,14 @@ footer {
         display: flex;
         align-items: flex-end;
         margin: 0;
+        font-family: 'Shrikhand';
     }
 
     .top-title {
         width: 700px;
-        height:40px;
+        height: 40px;
         margin-right: 80px;
-        font-size: 80px;
+        font-size: 60px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -425,28 +427,117 @@ footer {
         font-size: 40px;
         width: 740px;
         display: flex;
+        font-family: 'Shrikhand';
+        font-style: italic;
+        font-weight: 400;
     }
 
     .top-p {
         margin: 0;
         padding: 10px;
+        font-family: roboto;
     }
 
     .all-p {
         display: flex;
         padding: 40px;
     }
-    
+
     .bottom-portion {
         display: flex;
-    }
-    .Movement-cards{
-        display: flex;
-        flex-direction:row;
-    }
-    .aboutUsPortion{
-        display: flex;
-        flex-direction:row;
+        flex-direction: column;
     }
 
+    .background {
+        width: 1400px;
+        height: 580px;
+        margin-left: 120px;
+        margin-bottom: 155px;
+    }
+
+    .bottom-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #E2D6CF;
+    }
+
+    .bottom-title {
+        font-size: 65px;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        color: black;
+        background: #E2D6CF
+    }
+
+    .sub-bottom {
+        font-size: 40px;
+        width: 400px;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 280px;
+        color: white;
+        background: #E2D6CF
+    }
+
+    .cards {
+        background: #E2D6CF;
+    }
+
+    .card-p {
+        height: 500px;
+    }
+
+    .backgroundImageArea {
+        background-image: url(picFolder/protestsigns.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 90%;
+        margin-left: 75px;
+        height: 600px;
+        margin-top: 80px;
+    }
+
+    .Movement-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background: #E2D6CF;
+        height: 500px;
+    }
+
+    .aboutUsPortion {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .person-cards {
+        display: flex;
+        flex-direction: row;
+        margin-left: 93px;
+    }
+
+    .aboutUs-cards {
+        display: flex;
+        flex-direction: column;
+        height: 650px;
+        width: 600px;
+        margin-top: -250px;
+        margin-left: 30px;
+    }
+
+    .ourBodies {
+        height: 150px;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        margin-left: 300px;
+        font-family: 'Shrikhand';
+        font-weight: 400;
+        margin-top: 90px;
+        background:#E2D6CF;
+    }
 }
