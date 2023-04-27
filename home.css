@@ -130,38 +130,39 @@ input[type=checkbox] {
     max-width: 500px;
     height: 200px;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: -87px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-flow: wrap;
+    margin-left: 8%;
 }
 
 #Header1 {
     font-family: "Shrikhand";
     font-style: italic;
-    font-weight: 400;
-    font-size: 50px;
+    font-weight: 300;
+    font-size: 60px;
     text-align: left;
     color: #E2D6CF;
     width: 680px;
     height: 100px;
     margin-bottom: 30px;
-    margin-left: 5px;
+    margin-left: -3px;
 }
 
 #Header2 {
     font-family: "Shrikhand";
     font-style: italic;
     font-weight: 300;
-    font-size: 50px;
+    font-size: 54px;
     text-align: right;
     color: #E2D6CF;
     width: 800px;
     height: 100px;
     margin-top: -30px;
-    margin-right: 12px;
+    margin-right: -137px;
 }
 
 .container-main {
@@ -263,6 +264,9 @@ footer {
 }
 
 #nav-footer {
+    font-family: "Roboto", Condensed;
+    font-weight: 400;
+    font-style: normal;
     display: flex;
     justify-content: flex-end;
     gap: 20px;
@@ -401,13 +405,11 @@ footer {
 
     .container-desktop {
         display: block;
-        border: 2px solid red;
         height: 750px;
     }
 
     #block-desktop {
         display: block;
-        border: 2px solid red;
         width: 632px;
         padding-top: 53%;
         padding-right: 53%;
@@ -473,30 +475,28 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 40px;
-    height: 1200px;
-    border: 2px solid red;
+    margin-bottom: 2%;
+    height: 740px;
     }
     
     #protest1 {
-        width: 602px;
-        height: 446px;
+        width: 612px;
+        height: 441px;
         border-radius: 0;
-        border: 2px solid red;
     }
     
     #protest2 {
-        width: 602px;
-        height: 253px;
+        width: 609px;
+        height: 257px;
         border-radius: 0;
-        border: 2px solid red;
-    
+        margin-top: -1%;
+        margin-left: 0%;
     }
     
     #bandana {
         width: 698px;
         height: 699px;
         border-radius: 0;
-        border: 2px solid red;
     }
     
     #desktop-c1 {
@@ -515,8 +515,10 @@ footer {
         background-color: #E2D6CF;
         margin-top: -55%;
         margin-left: 8%;
-        
     }
-   
+    
+    .block3 {
+        margin-left: -5%;
+    }
 }
 
