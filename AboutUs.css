@@ -490,6 +490,7 @@ footer {
 
     .cards {
         background: #E2D6CF;
+        box-shadow: 10px 20px 4px rgba(0, 0, 0, 0.5);
     }
 
     .card-p {
@@ -518,7 +519,13 @@ footer {
         display: flex;
         flex-direction: column;
     }
-
+    .picture{
+        margin-top: -40px;
+    }
+    .personText{
+        font-size: 20px;
+        margin-top: 20px;
+    }
     .person-cards {
         display: flex;
         flex-direction: row;
@@ -532,6 +539,7 @@ footer {
         width: 600px;
         margin-top: -250px;
         margin-left: 30px;
+        box-shadow: 10px 20px 4px rgba(0, 0, 0, 0.5);
     }
 
     .ourBodies {
@@ -553,4 +561,5 @@ footer {
     font-style: normal;
     font-size: 12px;
     }
+    
 }
