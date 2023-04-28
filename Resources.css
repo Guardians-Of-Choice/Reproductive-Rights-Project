@@ -4,26 +4,23 @@
     box-sizing: border-box;
     background-color: #E2D6CF;
 }
-
 header {
-   font-family: "Roboto", Condensed;
+    font-family: 'Roboto Condensed';
     font-weight: 400;
+    font-stretch: condensed;
     font-style: normal;
     font-size: 20px;
     position: fixed;
     width: 100%;
     top: 0;
 }
-
 a {
     text-decoration: none;
     color: #FFFFFF;
 }
-
 li {
     list-style: none;
 }
-
 .navbar {
     display: flex;
     align-items: center;
@@ -33,34 +30,27 @@ li {
     background-color: #E2D6CF;
     color: #FFFFFF;
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
-    z-index: 1;
 }
-
 .nav-list a {
     color: #FFFFFF;
 }
-
 .nav-list a:hover {
     background-color: #192B28;
 }
-
 .nav-item:hover:after {
     background-color: #192B28;
 }
-
 .logo {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
 }
-
 #logo-img {
     width: 68px;
     height: 69px;
 }
-
 .menu {
     position: absolute;
     right: 0;
@@ -72,7 +62,6 @@ li {
     font-size: 18px;
     background: #E2D6CF;
 }
-
 .menu li {
     padding: 5px 14px;
     background: none;
@@ -81,7 +70,6 @@ li {
     position: relative;
     transition: color 0.3s;
 }
-
 .menu li:before {
     content: "";
     position: absolute;
@@ -95,49 +83,39 @@ li {
     transform-origin: 0 50%;
     transition: transform 0.3s ease-out;
 }
-
 .menu li:hover:after {
     background-color: #192B28;
     opacity: 0;
 }
-
 .menu li:hover {
     display: inline-block;
     background-color: #192B28;
 }
-
 .menu li+li {
     margin-top: 12px;
 }
-
 .menu li:hover:before {
     transform: scaleX(1);
-
 }
-
 .menu {
     display: none;
 }
-
 #checkbox_toggle:checked~.menu {
     display: flex;
     border: 1px solid white;
     background: #E2D6CF;
 }
-
 input[type=checkbox] {
     display: none;
 }
-
 .hamburger {
     display: block;
     font-size: 60px;
     user-select: none;
 }
-
 .titleOfPage {
     font-family: Shrikhand;
-    font-size: 48px;
+    font-size: 50px;
     font-style: italic;
     font-weight: 400;
     line-height: 100px;
@@ -149,35 +127,22 @@ input[type=checkbox] {
     justify-content: center;
     align-items: center;
 }
-
 #head1 {
     margin: 30px 40px;
     line-height: 70px;
-    margin-right: 7%;
-    width: 72%;
 }
-
 #head2 {
-    line-height: 45px;
-    margin-right: 3%;
-    margin-bottom: 6%;
+    line-height: 50px;
 }
-
 #head3 {
     color: #6F686D;
-    margin-left: 0%;
-    margin-top: -5%;
-    width: 100%;
-
 }
-
 .allCards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 .card {
     width: 420px;
     display: flex;
@@ -188,26 +153,22 @@ input[type=checkbox] {
     margin: 40px;
     background: #192B28;
 }
-
 .card-img-top {
-    width: 418px;
+    width: 100%;
     padding: 15px;
     background: #192B28;
 }
-
 .card-title {
     background: #192B28;
     color: white;
     font-size: 30px;
     font-family: roboto;
 }
-
 .card-text {
     background: #192B28;
     color: white;
     font-family: roboto;
 }
-
 .btn {
     background: #292342;
     margin: 25px 140px;
@@ -216,17 +177,15 @@ input[type=checkbox] {
     align-items: center;
     width: 150px;
     height: 50px;
-    border: 1px solid #ad86c0;
+    border: 1px solid #AD86C0;
     transition-duration: 0.4s;
     letter-spacing: 2px;
     font-family: "roboto"
 }
-
 .btn:hover {
-    background: #ad86c0;
+    background: #AD86C0;
     border: 1px solid #292342;
 }
-
 .card-body {
     background: #192B28;
     display: flex;
@@ -235,15 +194,10 @@ input[type=checkbox] {
     justify-content: center;
     width: 400px;
 }
-
 footer {
     background: #192B28;
 }
-
 #nav-footer {
-    font-family: "Roboto", Condensed;
-    font-weight: 400;
-    font-style: normal;
     display: flex;
     justify-content: flex-end;
     gap: 20px;
@@ -251,7 +205,6 @@ footer {
     padding: 20px;
     background: #192B28;
 }
-
 #copyright {
     font-family: "Roboto", Condensed;
     font-weight: 400;
@@ -266,37 +219,30 @@ footer {
     margin-left: -40px;
     background: #192B28;
 }
-
 .links-li {
     background: #192B28;
 }
-
 .links {
     background: #192B28;
 }
-
 @media (min-width: 600px) {
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-
     header {
         display: flex;
         justify-content: center;
         align-items: flex-end;
         flex-direction: row;
     }
-
     .navbar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        z-index: 2;
     }
-
     .menu {
         display: flex;
         flex-direction: row;
@@ -305,11 +251,9 @@ footer {
         padding: 0;
         margin-left: 80px;
     }
-
     .nav-list {
         margin-bottom: 50px;
     }
-
     .menu li {
         padding: 5px 14px;
         background: none;
@@ -318,7 +262,6 @@ footer {
         position: relative;
         transition: color 0.3s;
     }
-
     .menu li:before {
         content: "";
         position: absolute;
@@ -335,98 +278,43 @@ footer {
     nav-links{
      z-index: 1;
     }
-
     .menu li:hover {
         display: block;
         color: #192B28;
-
     }
     nav-links:hover{
         background:#192B28;
     }
-
     .menu li+li {
         margin-top: 12px;
     }
-
     .menu li:hover:before {
         transform: scaleX(1);
     }
-
     #checkbox_toggle:checked~.menu {
         display: none;
     }
-
     input[type=checkbox] {
         display: none;
     }
-
     .hamburger {
         display: none;
     }
-    .titleOfPage {
-     font-family: Shrikhand;
-     font-size: 48px;
-     font-style: italic;
-     font-weight: 400;
-     line-height: 100px;
-     letter-spacing: 0.05em;
-     text-align: center;
-     margin-top: 130px;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     align-items: center;
-     flex-flow: wrap;
-    }
-    
-    #head1 {
-        margin-right: 50%;
-    }
-    
-    #head2 {
-        margin-right: 30%;
-    }
-    #head3 {
-        
-    }
-    
     .allCards {
         display: flex;
         flex-flow: wrap;
         margin: 42px;
     }
-
     .card {
-        overflow: scroll;
         width: 500px;
         height: 500px;
-        box-shadow: 10px 20px 4px rgba(0, 0, 0, 0.5);
     }
-
     .card-img-top {
-        width: 440px;
+        width: 470px;
         height: 290px;
     }
-
     .card-body {
         width: 440px;
         height: 200px;
     }
-    .card {
-  /*padding: 50px;*/
-  /*background-color: green;*/
-  transition: transform .2s; /* Animation */
-  /*width: 200px;*/
-  /*height: 200px;*/
-  /*margin: 0 auto;*/
-}
-
-.card:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-/*.allCards {*/
-/*    overflow: scroll;*/
-/*}*/
 }
