@@ -221,7 +221,7 @@ input[type=checkbox] {
 
 h4 {
     background-color: white;
-    font-family: 'Roboto Slab';
+    font-family: Roboto;
     font-size: 25px;
     padding: 25px;
     width: 100%;
@@ -229,7 +229,7 @@ h4 {
 
 .card-p {
     background-color: white;
-    font-family: 'Roboto Condensed';
+    font-family:Roboto;
     font-size: 18px;
     padding: 40px 20px;
     height: 280px;
@@ -263,6 +263,7 @@ h4 {
 .personText {
     color: white;
     background-color: #192B28;
+    width: 500px;
 }
 
 footer {
