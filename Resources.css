@@ -6,9 +6,8 @@
 }
 
 header {
-    font-family: 'Roboto Condensed';
+   font-family: "Roboto", Condensed;
     font-weight: 400;
-    font-stretch: condensed;
     font-style: normal;
     font-size: 20px;
     position: fixed;
@@ -34,8 +33,9 @@ li {
     background-color: #E2D6CF;
     color: #FFFFFF;
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .nav-list a {
@@ -137,7 +137,7 @@ input[type=checkbox] {
 
 .titleOfPage {
     font-family: Shrikhand;
-    font-size: 50px;
+    font-size: 48px;
     font-style: italic;
     font-weight: 400;
     line-height: 100px;
@@ -153,14 +153,21 @@ input[type=checkbox] {
 #head1 {
     margin: 30px 40px;
     line-height: 70px;
+    margin-right: 7%;
+    width: 72%;
 }
 
 #head2 {
-    line-height: 50px;
+    line-height: 45px;
+    margin-right: 3%;
+    margin-bottom: 6%;
 }
 
 #head3 {
     color: #6F686D;
+    margin-left: 0%;
+    margin-top: -5%;
+    width: 100%;
 
 }
 
@@ -183,7 +190,7 @@ input[type=checkbox] {
 }
 
 .card-img-top {
-    width: 100%;
+    width: 418px;
     padding: 15px;
     background: #192B28;
 }
@@ -234,6 +241,9 @@ footer {
 }
 
 #nav-footer {
+    font-family: "Roboto", Condensed;
+    font-weight: 400;
+    font-style: normal;
     display: flex;
     justify-content: flex-end;
     gap: 20px;
@@ -284,6 +294,7 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        z-index: 2;
     }
 
     .menu {
@@ -353,7 +364,33 @@ footer {
     .hamburger {
         display: none;
     }
-
+    .titleOfPage {
+     font-family: Shrikhand;
+     font-size: 48px;
+     font-style: italic;
+     font-weight: 400;
+     line-height: 100px;
+     letter-spacing: 0.05em;
+     text-align: center;
+     margin-top: 130px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     flex-flow: wrap;
+    }
+    
+    #head1 {
+        margin-right: 50%;
+    }
+    
+    #head2 {
+        margin-right: 30%;
+    }
+    #head3 {
+        
+    }
+    
     .allCards {
         display: flex;
         flex-flow: wrap;
@@ -361,12 +398,14 @@ footer {
     }
 
     .card {
+        overflow: scroll;
         width: 500px;
         height: 500px;
+        box-shadow: 10px 20px 4px rgba(0, 0, 0, 0.5);
     }
 
     .card-img-top {
-        width: 470px;
+        width: 440px;
         height: 290px;
     }
 
@@ -374,6 +413,20 @@ footer {
         width: 440px;
         height: 200px;
     }
+    .card {
+  /*padding: 50px;*/
+  /*background-color: green;*/
+  transition: transform .2s; /* Animation */
+  /*width: 200px;*/
+  /*height: 200px;*/
+  /*margin: 0 auto;*/
+}
 
-    .card-text {}
+.card:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/*.allCards {*/
+/*    overflow: scroll;*/
+/*}*/
 }
