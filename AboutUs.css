@@ -47,7 +47,12 @@ li {
 .nav-list a:hover {
     background-color: #E2D6CF;
 }
-
+.nav-links{
+    font-family: "Roboto", Condensed;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
 .nav-item:hover {
     background-color: #E2D6CF;
 }
@@ -478,7 +483,8 @@ footer {
         justify-content: flex-end;
         margin-left: 280px;
         color: white;
-        background: #E2D6CF
+        background: #192B28;
+        justify-content: center;
     }
 
     .cards {
@@ -538,6 +544,12 @@ footer {
         font-family: 'Shrikhand';
         font-weight: 400;
         margin-top: 90px;
-        background:#E2D6CF;
+        background: #E2D6CF;
+    }
+    .links{
+        font-family: "Roboto", Condensed;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
     }
 }
